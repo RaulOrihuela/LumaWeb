@@ -92,6 +92,13 @@ img::-moz-selection {
   padding: 20px 40px;
 }
 
+.btn-arrow, .btn-arrow:focus, .btn-arrow:hover{
+  font-size: 40px;
+  color: white;
+  background-color: #fed13680;
+  padding: 10px 20px;
+}
+
 .btn-primary {
   background-color: #fed136;
   border-color: #fed136;
@@ -788,5 +795,5 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   transform: .5s;
 }
 .card .details .center ul li a:hover {
-  background: #ff3636;
+  background: #1bb8b0;
 }

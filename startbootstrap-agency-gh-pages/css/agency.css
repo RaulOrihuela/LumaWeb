@@ -716,12 +716,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .card {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 360px;
-  height: 400px;
-  background: #000;
+  width: 300px;
+  height: 300px;
 }
 .card .image {
   width: 100%;
@@ -751,29 +750,22 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   transform: perspective(2000px) rotateY(0deg);
 }
 .card .details .center {
-  padding: 20px;
+  padding: 0px;
   text-align: center;
   background: #fff;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-.card .details .center h1 {
-  margin: 0;
-  padding: 0;
-  color: #ff3636;
-  line-height: 20px;
-  font-size: 20px;
-  text-transform: uppercase;
-}
+
 .card .details .center h1 span {
   font-size: 14px;
-  color: #262626;
+  color: #05bdeb;
 }
 .card .details .center p {
   margin: 10px 0;
   padding: 0;
-  color: #262626;
+  color: #000000;
 }
 .card .details .center ul {
   margin: 10px auto 0;

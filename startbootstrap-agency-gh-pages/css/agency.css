@@ -212,7 +212,6 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/bootstrap_bg.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;

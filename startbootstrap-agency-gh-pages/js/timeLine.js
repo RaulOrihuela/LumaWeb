@@ -33,24 +33,27 @@ function changeActive(elementClass){
 
     if (remaining>0){
         var target = $(".timeline").eq(0);
-        target.html(
-            target.html() + 
+        target.append(
             createNewEvent((remaining%2 == 0), "img/about/1.jpg","2018", "SwapShop","Rulo hizo nudos")
         );
         remaining --;
-        if (remaining == 0){
-            target.html(
-                target.html() + 
-                createFinalEvent()
-            );
-        }
+    }else if (remaining == 0){
+        var target = $(".timeline").eq(0);
+        target.append( 
+            createFinalEvent()
+        );
+        remaining --;
     }
 }
 
 function createNewEvent(isInverted,myImage, myYear, myTitle,myDescription){
     var myString = "<li class = \""
-    if (isInverted) myString+="timeline-inverted "
-    myString+="timelineActive\"><div class=\"timeline-image\"><img class=\"rounded-circle img-fluid\" src=\"";
+    if (isInverted){
+        myString+="timeline-inverted bounceInLeft "
+    } else {
+        myString+="bounceInRight "
+    }
+    myString+="animated delay-1s timelineActive\"><div class=\"timeline-image\"><img class=\"rounded-circle img-fluid\" src=\"";
     myString+=myImage;
     myString+= "\" alt=\"\"></div><div class=\"timeline-panel\"><div class=\"timeline-heading\"><h4>";
     myString+=myYear;
@@ -63,5 +66,5 @@ function createNewEvent(isInverted,myImage, myYear, myTitle,myDescription){
 }
 
 function createFinalEvent(){
-    return "<li class=\"timeline-inverted\"><div class=\"timeline-image\"><h4>Se parte<br>del cambio</h4></div></li>";
+    return "<li class=\"timeline-inverted bounceInUp animated delay-1s\"><div class=\"timeline-image\"><h4>Se parte<br>del cambio</h4></div></li>";
 }

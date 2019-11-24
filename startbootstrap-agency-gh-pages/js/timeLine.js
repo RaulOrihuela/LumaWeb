@@ -53,7 +53,7 @@ function createNewEvent(isInverted,myImage, myYear, myTitle,myDescription){
     } else {
         myString+="bounceInRight "
     }
-    myString+="animated delay-1s timelineActive\"><div class=\"timeline-image\"><img class=\"rounded-circle img-fluid\" src=\"";
+    myString+="animated timelineActive\"><div class=\"timeline-image\"><img class=\"rounded-circle img-fluid\" src=\"";
     myString+=myImage;
     myString+= "\" alt=\"\"></div><div class=\"timeline-panel\"><div class=\"timeline-heading\"><h4>";
     myString+=myYear;
@@ -66,5 +66,5 @@ function createNewEvent(isInverted,myImage, myYear, myTitle,myDescription){
 }
 
 function createFinalEvent(){
-    return "<li class=\"timeline-inverted bounceInUp animated delay-1s\"><div class=\"timeline-image\"><h4>Se parte<br>del cambio</h4></div></li>";
+    return "<li class=\"timeline-inverted bounceInUp animated\"><div class=\"timeline-image\"><h4>Sé parte<br>del cambio</h4></div></li>";
 }

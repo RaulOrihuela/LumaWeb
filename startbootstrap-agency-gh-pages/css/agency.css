@@ -796,3 +796,26 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .card .details .center ul li a:hover {
   background: #1bb8b0;
 }
+
+/* Return TOP PAGE button */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 40px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  /*background-color: #fcfcfc; /* Set a background color */
+  /*color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0px; /* Some padding */
+  color: #ffc107;  
+  font-size: 60px; /* Increase font size */
+}
+
+#myBtn:hover {
+  /*background-color: #555; /* Add a dark-grey background on hover */
+  color: #fed136;
+}

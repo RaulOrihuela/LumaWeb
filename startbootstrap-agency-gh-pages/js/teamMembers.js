@@ -7,11 +7,9 @@ $(document).ready(function(){
 
 $(window).resize(function(){
 
-    if (!this.smallSize && ($(window).width() <= 768)) {  
-        console.log("small");
+    if (!this.smallSize && ($(window).width() <= 768)) { 
         this.addContent(true);
     } else if (this.smallSize && ($(window).width() > 768)){
-        console.log("big");
         this.addContent(false);
     } 
     smallSize = ($(window).width() <= 768);

@@ -1,4 +1,5 @@
-var remaining = 5;
+var remaining = 4;
+var max = remaining - 1;
 
 $(window).scroll(function(){
     
@@ -33,9 +34,24 @@ function changeActive(elementClass){
 
     if (remaining>0){
         var target = $(".timeline").eq(0);
-        target.append(
-            createNewEvent((remaining%2 == 0), "img/about/1.jpg","2018", "SwapShop","Rulo hizo nudos")
-        );
+        if(remaining>max){
+            target.append(createNewEvent((remaining%2 == 0), "img/about/1.jpg","<2019", "PES Nacional","Fundación PES Cuernavaca"));
+        }
+        else if(remaining>max-1){
+            target.append(createNewEvent((remaining%2 == 0), "img/about/2.jpg" ,"2019", "LUMA","Lideres Unidos Por el Medio Ambiente"));
+        }
+        else if(remaining>max-2){
+            target.append(createNewEvent((remaining%2 == 0), "img/about/2.jpg","Noviembre - 2019", "SwapShop","Combatiendo la industria textil"));
+        }
+        else if(remaining>max-3){
+            target.append(createNewEvent((remaining%2 == 0), "img/about/2.jpg","Agosto 2020", "LumaAPP","Proximamente..."));
+        }
+        else if(remaining>max-4){
+            target.append(createNewEvent((remaining%2 == 0), "img/about/2.jpg","2018", "SwapShop","Rodri"));
+        }
+        else{
+            target.append(createNewEvent((remaining%2 == 0), "img/about/2.jpg","2018", "SwapShop","Rulo hizo nudos"));
+        }
         remaining --;
     }else if (remaining == 0){
         var target = $(".timeline").eq(0);

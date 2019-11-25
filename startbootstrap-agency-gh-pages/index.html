@@ -28,6 +28,13 @@
 
 <body id="page-top">
 
+  <!-- LOADER -->
+
+  <div class="loader_bg">
+    <div class="loader"></div>    
+  </div>
+
+
   <!-- Return TOP button-->
   <i class="fas fa-chevron-circle-up" onclick="topFunction()" id="myBtn" title="Go to top"></i>
   
@@ -65,7 +72,7 @@
   <!-- Header -->
   <header class="masthead">
     <div class="container">
-      <div class="intro-text fadeInUp slower animated">
+      <div class="intro-text fadeInUp slower animated delay-1s">
         <div class="intro-lead-in">El corazón del medio ambiente</div>
         <div class="intro-heading text-uppercase">¡Bienvenido a LUMA!</div>
         <a class="btn btn-arrow js-scroll-trigger zoomIn fast animated delay-3s" href="#portfolio"><i class="fas fa-arrow-circle-down"></i></a>
@@ -587,7 +594,7 @@
                 </div>
 
                 <p>La mejor forma de desechar los papeles de baño usados es tirarlos al escusado para ser
-                  descartados junto con la materia fecal, por lo que de ser el caso; se dará un comunicado
+                  descartados junto con la materia fecal, por lo que de ser el caso, se dará un comunicado
                   a la comunidad para informar que se quitarán los cestos de basura de los cubículos en los
                   sanitarios y deberán descartar el papel higiénico usado a través del inodoro.
                   <ul class="list-inline">
@@ -683,6 +690,12 @@
   <script src="js/timeLine.js"></script>
   <script src="js/randomBackground.js"></script>
   <script src="js/topButton.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    setTimeout(function(){
+      $('.loader_bg').fadeToggle();
+    }, 1500);
+  </script>
 
 </body>
 

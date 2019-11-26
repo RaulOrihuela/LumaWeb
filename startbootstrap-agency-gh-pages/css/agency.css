@@ -148,7 +148,7 @@ img::-moz-selection {
 .btn-arrow, .btn-arrow:focus, .btn-arrow:hover{
   font-size: 40px;
   color: white;
-  background-color: #fed13680;
+  background: transparent;
   padding: 10px 20px;
 }
 
@@ -235,6 +235,11 @@ img::-moz-selection {
   color: #65e43b;
 }
 */
+
+.no-background, .no-background:hover, .no-background:active{
+  background: transparent;
+}
+
 
 @media (min-width: 992px) {
   #mainNav {
